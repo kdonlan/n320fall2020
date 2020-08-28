@@ -48,4 +48,3 @@ class House extends Building {
     }
 }
 
-
