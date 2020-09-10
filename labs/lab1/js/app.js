@@ -1,8 +1,12 @@
-//name of the array I'm creating
+//name of the arrays I'm creating
 let dropsArray = [];
+let colorArray = [];
 
-//sets the number of drops in the array
-let drops = 200;
+//sets the number of drops
+let drops = 275;
+
+//blue color start value
+let blueValue = 20;
 
 // *******************************************************  rainDrop  *******************************************************
 
@@ -27,16 +31,10 @@ class rainDrop {
     // drop renders on the screen
     createDrop() {
     stroke(255,255,255); //drop color
-    strokeWeight(2.75); //drop width
-    line(this.x,this.y,this.x,this.y + Math.floor(Math.random()*25)); //shape of the drop
+    strokeWeight(2); //drop width
+    line(this.x,this.y,this.x,this.y + Math.floor(Math.random()*30, 75)); //shape of the drop
     // console.log(this.createDrop);
     }
-
-    // drop hits the ground
-    // dropHit() {
-    //   if (this.y >= innerHeight*.8) {
-    //   }
-    // }
   }
     
     //creates the new occurances of rainDrop class and creates the array defined above
@@ -44,13 +42,12 @@ class rainDrop {
       dropsArray[i] = new rainDrop (
               Math.floor(Math.random()*innerWidth), //defines x
               Math.floor(Math.random()*innerHeight), //defines y
-              8, //defines speed
+              18, //defines speed
             );
     }
     // console.log(dropsArray)
 
 // *******************************************************  GROUND  *******************************************************
-
 
     class Ground {
       constructor (xpos, ypos, rw, rh, fillColor) {
@@ -61,30 +58,36 @@ class rainDrop {
         this.fillColor = fillColor //sets the ground color
       }
       
-    //myGround renders to the screen
+    //Ground renders to the screen
     createGround() {
         noStroke();
         rect(this.xpos, this.ypos, this.rw, this.rh);
         fill(this.fillColor);
       }
 
-    // changes the ground color when 10 drops hit the ground  (don't need, I don't think)
     changeGround() {
-      var hundredPercent = 100;
-      var fivePercent = hundredPercent * .05;
-      for (let i=0; i < 255; i++) {
-        theGround.fillColor = "rgb(0, 0, 255, fivePercent)";
-        console.log(theGround.fillColor);
+        var blue = 255;
+        var fivePerc = blue * .05;
+        for (let i=0; i < 255 && i !== 0; i++) {
+          Ground.fillColor = "rgb(0, 0, " + 255 - fivePerc + ")";
+        }
+        // console.log(this.fillColor);
       }
-    }
   }
-//create variable from Ground class called theGround
-var theGround = new Ground(innerWidth*0,innerHeight*.8, innerWidth, innerHeight, "rgb(0, 0, 255)");
-console.log(theGround);
-console.log(theGround.fillColor);
+
+//create variable from Ground class called theGround for "1" ground occurance
+// var theGround = new Ground(innerWidth*0,innerHeight*.8, innerWidth, innerHeight, "rgb(0, 255, 55)");
+// console.log(theGround);
+// console.log(theGround.fillColor);
+
+// creates the new occurances of ground class and creates the array defined above
+for (let i=0; i < 20; i++) { //blue is 55
+  colorArray[i] = new Ground (innerWidth*0,innerHeight*.8, innerWidth, innerHeight, "rgb(80, 202,55)");
+  // colorArray[i] = new Ground (innerWidth*0,innerHeight*.8, innerWidth, innerHeight, "rgb(80, 202," + this.fillColor + ")");
+  }
 
 
-
+// *******************************************************  SET-UP CANVAS  *******************************************************
 
 //sets the width/height of the canvas
 function setup() {
@@ -93,21 +96,24 @@ function setup() {
 
 //puts the objects on the page
 function draw() {
-    background(52, 122, 235); //blue background
-    
-    // invokes the functions defined in rainDrop above
+    background(52, 122, 235); //blue sky background
+  
+    // invokes the functions defined in rainDrop class above
     for (let i=0; i < dropsArray.length; i++) {
     dropsArray[i].fallingDrop();
     dropsArray[i].createDrop();
 
+    // invokes the function define in the Ground class above
+    for (let i=0; i < colorArray.length; i++) {
+      colorArray[i].changeGround();
+      colorArray[i].createGround();        
+    }
+    
     // function for single drop
     // myDrop.fallingDrop();
     // myDrop.createDrop();
 
-    //invokes the functions defined in ground above
-    theGround.createGround();
-    // theGround.changeGround();
-    // theGround.changeGround();
-
+    //invokes the functions defined in ground above (for "1" ground)
+    // theGround.createGround();
   }
 }
