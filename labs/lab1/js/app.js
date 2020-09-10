@@ -26,7 +26,7 @@ class rainDrop {
     createDrop() {
     stroke(255,255,255); //drop color
     strokeWeight(2.75); //drop width
-    line(this.x,this.y,this.x,this.y + Math.floor(Math.random()*15,25)); //shape of the drop
+    line(this.x,this.y,this.x,this.y + Math.floor(Math.random()*25)); //shape of the drop
     // console.log(this.createDrop);
     }
     }
@@ -36,7 +36,7 @@ class rainDrop {
       dropsArray[i] = new rainDrop (
               Math.floor(Math.random()*innerWidth), //defines x
               Math.floor(Math.random()*-200, -100), //defines y
-              5, //defines speed
+              5.66, //defines speed
             );
     }
     // console.log(dropsArray)
@@ -49,17 +49,43 @@ class rainDrop {
         this.rw = rw; //rect width
         this.rh = rh; //rect height
       }
-
+      
+    //myGround renders to the screen
     createGround() {
+        noStroke();
         rect(this.xpos, this.ypos, this.rw, this.rh);
         fill(57, 184, 91);
         // console.log(this.createGround)
       }
+
+    //drops hit ground position
+    groundHit () {
+      if(this.rainDrop.y == innerHeight*8) {
+        console.log("drop hit")
+      }
     }
 
+    //changes the ground color when 10 drops hit the ground  
+    // changeGround() { 
+    //   console.log(dropsArray);
+    //   if (this.dropsArray.y == innerHeight*8) {
+    //     noStroke();
+    //     rect(this.xpos, this.ypos, this.rw, this.rh);
+    //     fill(66, 245, 239);
+    //     // rect(this.xpos, this.ypos, this.rw, this.rh);
+    //     // let value = lightness(c);
+    //     // fill(value);
+    //     console.log(this.changeGround);
+      // }
+    // }
+  }
+
 //create variable from Ground class called theGround
-var theGround = new Ground(innerWidth*.2,innerHeight*.2, 800, 200);
-console.log(theGround);
+var theGround = new Ground(innerWidth*0,innerHeight*.8, innerWidth, innerHeight);
+// console.log(theGround);
+
+
+
 
 //sets the width/height of the canvas
 function setup() {
@@ -69,20 +95,18 @@ function setup() {
 //puts the objects on the page
 function draw() {
     background(52, 122, 235); //blue background
-  
-    for (let i=0; i < dropsArray.length; i++) {
     
     // invokes the functions defined in rainDrop above
+    for (let i=0; i < dropsArray.length; i++) {
     dropsArray[i].fallingDrop();
     dropsArray[i].createDrop();
 
+    // function for single drop
+    // myDrop.fallingDrop();
+    // myDrop.createDrop();
+
     //invokes the functions defined in ground above
     theGround.createGround();
-
-    
-
-//     // function for single drop
-//     myDrop.fallingDrop();
-//     myDrop.createDrop();
-}
+    // theGround.changeGround();
+  }
 }
