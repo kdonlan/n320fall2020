@@ -29,6 +29,14 @@ class rainDrop {
     line(this.x,this.y,this.x,this.y + Math.floor(Math.random()*25)); //shape of the drop
     // console.log(this.createDrop);
     }
+
+    // drop hits the ground (do not need?)
+    // dropHit() {
+    //   if (this.x == innerWidth*.8) {
+    //     console.log("drop hit");
+    //     console.log(rainDrop.dropHit);
+    //   }
+    // }
     }
     
     //creates the new occurances of rainDrop class and creates the array defined above
@@ -58,28 +66,27 @@ class rainDrop {
         // console.log(this.createGround)
       }
 
-    //drops hit ground position
+    // drops hit ground position
     groundHit () {
-      if(this.rainDrop.y == innerHeight*8) {
-        console.log("drop hit")
+      console.log(theGround);
+      if(Ground.xpos == dropsArray.x) {
+        console.log("drop hit");
+        console.log(theGround.groundHit);
       }
     }
 
     //changes the ground color when 10 drops hit the ground  
-    // changeGround() { 
-    //   console.log(dropsArray);
-    //   if (this.dropsArray.y == innerHeight*8) {
-    //     noStroke();
-    //     rect(this.xpos, this.ypos, this.rw, this.rh);
-    //     fill(66, 245, 239);
-    //     // rect(this.xpos, this.ypos, this.rw, this.rh);
-    //     // let value = lightness(c);
-    //     // fill(value);
-    //     console.log(this.changeGround);
-      // }
-    // }
+    changeGround() {
+      if (dropsArray <= 9) {
+        noStroke();
+        rect(this.xpos, this.ypos, this.rw, this.rh);
+        fill(66, 245, 239);
+    //     console.log("ground change");
+    //     console.log(Ground.changeGround);
+    //     console.log(rect)
+    }
   }
-
+  }
 //create variable from Ground class called theGround
 var theGround = new Ground(innerWidth*0,innerHeight*.8, innerWidth, innerHeight);
 // console.log(theGround);
@@ -107,6 +114,7 @@ function draw() {
 
     //invokes the functions defined in ground above
     theGround.createGround();
+    theGround.groundHit();
     // theGround.changeGround();
   }
 }
