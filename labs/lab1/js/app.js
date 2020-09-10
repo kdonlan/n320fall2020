@@ -2,7 +2,9 @@
 let dropsArray = [];
 
 //sets the number of drops in the array
-let drops = 170;
+let drops = 200;
+
+// *******************************************************  rainDrop  *******************************************************
 
 //class for a one drop
 class rainDrop {
@@ -15,8 +17,8 @@ class rainDrop {
     
     // drop falls
     fallingDrop() {
-    this.y = this.y + this.speed*5; //rate of speed
-    if (this.y >=  innerHeight) { //randomizes the start position of the drop falling
+    this.y = this.y + this.speed*2 ; //rate of speed
+    if (this.y >=  innerHeight) { //randomizes the starting position of the drop falling
     this.y = Math.floor(Math.random()*-400, -50);
     // console.log(this.fallingDrop);
     }
@@ -30,66 +32,56 @@ class rainDrop {
     // console.log(this.createDrop);
     }
 
-    // drop hits the ground (do not need?)
+    // drop hits the ground
     // dropHit() {
-    //   if (this.x == innerWidth*.8) {
-    //     console.log("drop hit");
-    //     console.log(rainDrop.dropHit);
+    //   if (this.y >= innerHeight*.8) {
     //   }
     // }
-    }
+  }
     
     //creates the new occurances of rainDrop class and creates the array defined above
     for (let i=0; i < drops; i++) {
       dropsArray[i] = new rainDrop (
               Math.floor(Math.random()*innerWidth), //defines x
-              Math.floor(Math.random()*-200, -100), //defines y
-              5.66, //defines speed
+              Math.floor(Math.random()*innerHeight), //defines y
+              8, //defines speed
             );
     }
     // console.log(dropsArray)
 
+// *******************************************************  GROUND  *******************************************************
+
 
     class Ground {
-      constructor (xpos, ypos, rw, rh) {
+      constructor (xpos, ypos, rw, rh, fillColor) {
         this.xpos = xpos; //x position of rectangle
         this.ypos = ypos; //y position of rectangle
         this.rw = rw; //rect width
         this.rh = rh; //rect height
+        this.fillColor = fillColor //sets the ground color
       }
       
     //myGround renders to the screen
     createGround() {
         noStroke();
         rect(this.xpos, this.ypos, this.rw, this.rh);
-        fill(57, 184, 91);
-        // console.log(this.createGround)
+        fill(this.fillColor);
       }
 
-    // drops hit ground position
-    groundHit () {
-      console.log(theGround);
-      if(Ground.xpos == dropsArray.x) {
-        console.log("drop hit");
-        console.log(theGround.groundHit);
-      }
-    }
-
-    //changes the ground color when 10 drops hit the ground  
+    // changes the ground color when 10 drops hit the ground  (don't need, I don't think)
     changeGround() {
-      if (dropsArray <= 9) {
-        noStroke();
-        rect(this.xpos, this.ypos, this.rw, this.rh);
-        fill(66, 245, 239);
-    //     console.log("ground change");
-    //     console.log(Ground.changeGround);
-    //     console.log(rect)
+      var hundredPercent = 100;
+      var fivePercent = hundredPercent * .05;
+      for (let i=0; i < 255; i++) {
+        theGround.fillColor = "rgb(0, 0, 255, fivePercent)";
+        console.log(theGround.fillColor);
+      }
     }
-  }
   }
 //create variable from Ground class called theGround
-var theGround = new Ground(innerWidth*0,innerHeight*.8, innerWidth, innerHeight);
-// console.log(theGround);
+var theGround = new Ground(innerWidth*0,innerHeight*.8, innerWidth, innerHeight, "rgb(0, 0, 255)");
+console.log(theGround);
+console.log(theGround.fillColor);
 
 
 
@@ -114,7 +106,8 @@ function draw() {
 
     //invokes the functions defined in ground above
     theGround.createGround();
-    theGround.groundHit();
     // theGround.changeGround();
+    // theGround.changeGround();
+
   }
 }
