@@ -24,8 +24,7 @@ class Guitar extends Instrument {
 }
 //child class
 class Drum extends Instrument {
-    constructor(name) {
-        this.name = "Clarinet";
+    constructor() {
         super(120, "Percussion");
         }
 }
