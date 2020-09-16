@@ -1,8 +1,9 @@
 //base abstract class
 
 class Instrument {
-    constructor(loudness) {
-        this.loudness = loudness;
+    constructor(name, family) {
+        this.name = name;
+        this.family = family;
 }
     playInstrument() { //the verb to play the instrument that will print info to the console
         console.log("The " + this.name + " plays at " + this.loudness + " decibels and belongs to the " + this.family + " family.");
@@ -11,26 +12,23 @@ class Instrument {
 
 //child class
 class Clarinet extends Instrument {
-    constructor(name, family) {
-        super("90");
-        this.name = "Clarinet";
-        this.family = "Woodwind";
+    constructor(name, family, loudness) {
+        super("Clarinet","Woodwind");
+        this.loudness = 90;
         }
 }
 //child class
 class Guitar extends Instrument {
-    constructor(name, family) {
-        super("81");
-        this.name = "Guitar";
-        this.family = "Strings";
+    constructor(name, family, loudness) {
+        super("Guitar", "Strings");
+        this.loudness = 92;
         }
 }
 //child class
 class Drum extends Instrument {
-    constructor(name, family) {
-        super("120");
-        this.name = "Drum";
-        this.family = "Percussion";
+    constructor(name, family, loudness) {
+        super("Drum", "Percussion");
+        this.loudness = 120;
         }
 }
 
