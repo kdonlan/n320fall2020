@@ -6,10 +6,8 @@ class Item {
     }
     render(newCount) {
         return `<img style="width:300px;"src="${this.image}"><div><h3>${this.name}</h3></div>
-            <button onclick="buyItem()">Buy ${this.name}</button>
-            Inventory: ${this.inventory}</div><br>`;
-    }
-    
+            <div><p>Inventory: ${this.inventory}<p></div></div><br><button onclick="buyItem()">Buy ${this.name}</button>`;
+    }    
     buyItem(newCount) {
         if (this.inventory > 0) {
             newCount = this.inventory--;
