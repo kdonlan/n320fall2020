@@ -53,7 +53,7 @@ class virtualGlass {
     }
 
     pour() {
-        this.water --;
+        this.water ++;
     }
 }
 
