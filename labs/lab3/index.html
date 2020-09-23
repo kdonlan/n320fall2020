@@ -15,32 +15,42 @@
         p {
             font-family: sans-serif;
         }
-        #vendDiv, #vendDiv2, #vendDiv3 {
-            padding-right: 150px;
+
+        #vendDiv,
+        #vendDiv2,
+        #vendDiv3 {
+            padding-right: 75;
             border: 1 solid black;
         }
     </style>
 </head>
+<h2>Vending Machine</h2>
+</div>
 
-<body style="margin:20;">
-    <h2>Vending Machine</h2>
-    <section style="display:flex;flex-direction:row;align-items: flex-end;">
-    <div id="vendDiv">
+<body>
+    <div style="margin:20px;display:flex;flex-direction: row; align-items:flex-end;justify-content:space-between;">
+        <section>
+            <div id="vendDiv">
+            </div>
+            <div><button onclick="buyItem1()">BUY ITEM</button></div>
+            <br>
+            <br>
+        </section>
+        <section>
+            <div id="vendDiv2">
+            </div>
+            <div><button onclick="buyItem2()">BUY ITEM</button></div>
+            <br>
+            <br>
+        </section>
+        <section>
+            <div id="vendDiv3">
+            </div>
+            <div><button style="margin:20;" onclick="buyItem3()">BUY ITEM</button></div>
+            <br>
+            <br>
+        </section>
     </div>
-    <!-- <div><button onclick="buyItem(vending1)">BUY ITEM</button></div> -->
-    <br>
-    <br>
-    <div id="vendDiv2">
-    </div>
-    <!-- <div><button onclick="buyItem(vending2)">BUY ITEM</button></div> -->
-    <br>
-    <br>
-    <div id="vendDiv3">
-    </div>
-    <!-- <div><button onclick="buyItem(vending3)">BUY ITEM</button></div> -->
-    <br>
-    <br>
-</section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
     <script src="./js/app.js"></script>
 </body>

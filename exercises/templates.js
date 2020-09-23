@@ -39,58 +39,60 @@
 
 //implementing a simple application
 
-class virtualGlass {
-    constructor(name) {
-        this.name = name;
-        this.water = .2;
-        this.empty = 0;
-    }
-
-    render() {
-        return `<div><h2>${this.name}</h2></div>
-        <div><p>Full: ${this.water}</p></div>
-        <div><p>Half: ${this.empty}</p></div>`;
-    }
-
-    pour() {
-        this.water ++;
-    }
-}
-
-let myVirtualGlass = new virtualGlass("Glassy");
-let glassDiv = document.getElementById("glassDiv");
-glassDiv.innerHTML = myVirtualGlass.render();
-
-function pourWater() {
-    myVirtualGlass.pour();
-    glassDiv.innerHTML = myVirtualGlass.render();
-}
-
-
-// class VirtualPet {
-//       constructor(name) {
-//         this.name = name;
-//         this.hunger = 50;
-//         this.energy = 60;
-//       }
-//       render() {
-//         return `
-//           <div>${this.name}</div>
-//           <div>Hunger: ${this.hunger}</div>
-//           <div>Energy: ${this.energy}</div>
-//         `;
-//       }
-//       feed() {
-//         this.hunger --;
-//       }
+// class virtualGlass {
+//     constructor(name) {
+//         this.name = name;
+//         this.water = .2;
+//         this.empty = 0;
 //     }
 
-//     let myPet = new VirtualPet("Gidget");
-// let petDiv = document.getElementById("petDiv");
-// petDiv.innerHTML = myPet.render();
-// function feedPet() {
-//   myPet.feed();
-//   petDiv.innerHTML = myPet.render();
+//     render() {
+//         return `<div><h2>${this.name}</h2></div>
+//         <div><p>Full: ${this.water}</p></div>
+//         <div><p>Half: ${this.empty}</p></div>`;
+//     }
+
+//     pour() {
+//         this.water ++;
+//     }
 // }
+
+// let myVirtualGlass = new virtualGlass("Glassy");
+// let glassDiv = document.getElementById("glassDiv");
+// glassDiv.innerHTML = myVirtualGlass.render();
+
+// function pourWater() {
+//     myVirtualGlass.pour();
+//     glassDiv.innerHTML = myVirtualGlass.render();
+// }
+
+
+class VirtualPet {
+      constructor(name) {
+        this.name = name;
+        this.hunger = 50;
+        this.energy = 60;
+      }
+      render() {
+        return `
+          <div>${this.name}</div>
+          <div>Hunger: ${this.hunger}</div>
+          <div>Energy: ${this.energy}</div>
+        `;
+      }
+      feed() {
+        this.hunger --;
+      }
+    }
+
+    let myPet = new VirtualPet("Gidget");
+let petDiv = document.getElementById("petDiv");
+petDiv.innerHTML = myPet.render();
+
+
+function feedPet() {
+  myPet.feed();
+  petDiv.innerHTML = myPet.render();
+}
 
     
