@@ -8,7 +8,23 @@ class Item {
         return `<img style="width:300px;"src="${this.image}"><div><h3>${this.name}</h3></div>
             <div><p>Inventory: ${this.inventory}<p></div></div><br><button onclick="buyItem()">Buy ${this.name}</button>`;
     }    
-    buyItem(newCount) {
+    buyItem1(newCount) {
+        if (this.inventory > 0) {
+            newCount = this.inventory--;
+            // console.log(this.inventory);
+            // console.log(newCount);
+            // console.log("Buying the First Item");
+        }
+    }
+    buyItem2(newCount) {
+        if (this.inventory > 0) {
+            newCount = this.inventory--;
+            // console.log(this.inventory);
+            // console.log(newCount);
+            // console.log("Buying the First Item");
+        }
+    }
+    buyItem3(newCount) {
         if (this.inventory > 0) {
             newCount = this.inventory--;
             // console.log(this.inventory);
@@ -31,9 +47,9 @@ let vendDiv3 = document.getElementById("vendDiv3");
 vendDiv3.innerHTML = vending3.render();
 
 function buyItem() {
-    vending1.buyItem();
-    vending2.buyItem();
-    vending3.buyItem();
+    vending1.buyItem1();
+    vending2.buyItem2();
+    vending3.buyItem3();
     vendDiv.innerHTML = vending1.render();
     vendDiv2.innerHTML = vending2.render();
     vendDiv3.innerHTML = vending3.render();
