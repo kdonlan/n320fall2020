@@ -46,6 +46,7 @@ let vending3 = new Item("Doritos", 50,"./images/doritos.jpg");
 let vendDiv3 = document.getElementById("vendDiv3");
 vendDiv3.innerHTML = vending3.render();
 
+
 function buyItem() {
     vending1.buyItem1();
     vending2.buyItem2();
@@ -53,5 +54,18 @@ function buyItem() {
     vendDiv.innerHTML = vending1.render();
     vendDiv2.innerHTML = vending2.render();
     vendDiv3.innerHTML = vending3.render();
+function buyItem1() {
+    vending1.buyItem1();
+    vendDiv.innerHTML = vending1.render();
+}
 
+function buyItem2 () {
+    vending2.buyItem2();
+    vendDiv2.innerHTML = vending2.render();
+}
+
+function buyItem3() {
+    vending3.buyItem3();
+    vendDiv3.innerHTML = vending3.render();
+}
 }
