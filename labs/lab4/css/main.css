@@ -14,7 +14,7 @@ h1 {
     color: white;
 }
 
-h2 {
+h2 a {
     background-color: black;
     font-family: 'Bree Serif', serif;
     padding: 20px;
@@ -32,37 +32,78 @@ h2 {
 
 .cardsContainer1,
 .cardsContainer2 {
-    width: 70%;
-    min-height: 300px;
+    width: 100%;
     margin: 0 auto;
+    padding-top: 50px;
     display: flex;
     flex-wrap: row;
-    align-items: center;
+    align-items: space-around;
+    /* background-color: yellow; */
 }
 
 .card {
-    outline: black 3 solid;
+    /* outline: black 3 solid;
     width: 25%;
     margin-left: 20px;
     height: 275px;
-    background-color: #fff;
-    padding: 50px;
+    /* background-color: #fff; */
+    padding: 20px;
 }
 
 h3 {
     color: white;
 }
 
-.buttonContainer {
-    padding: 20px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-.deal,
+/* .deal,
 .reset {
     width: 150px;
     margin: 0 auto;
     height: 25px;
     color: black;
+} */
+
+#heart {
+    fill: red;
+}
+
+#diamond {
+    fill: red;
+}
+
+.button {
+    background: yellow;
+    width: 200px;
+    height: 50px;
+    /* padding: 4px 0; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 3px;
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+}
+
+.button p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    user-select: none;
+}
+
+.button:hover {
+    cursor: none;
+}
+
+.button:after {
+    /* content: "";
+    /* display: block; */
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    /* border-radius: 50%; */
+    background-color: darken(#f1c40f, 20%);
+    opacity: 0.4;
+    bottom: -30px;
 }
