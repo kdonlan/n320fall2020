@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practice</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .status textarea {
+            width: 200px;
+            height: 25px;
+            border-radius: 5px;
+            /* animation-name: selectedAnim;
+            animation-duration: .5s;
+            animation-fill-mode: forwards; */
+        }
+
+        .selected {
+            animation-name: selectedAnim;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .deselected {
+            animation-name: selectedAnim;
+            animation-duration: 1s;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes selectedAnim {
+
+            /* start 0% */
+            from {
+                height: 25px;
+                background-color: white;
+            }
+
+            /* from 100% */
+            to {
+                height: 150px;
+                background-color: yellow;
+            }
+        }
+
+        #nav {
+            list-style-type: none;
+        }
+
+        .navitem {
+            color: white;
+        }
+    </style>
+</head>
+<html>
+
+<body>
+    <div class="status">
+        <textarea id=txtStatInput" class="selected" onfocus=" textFocus() " onblur="textLeave()">
+    </textarea>
+        <button>Submit</button>
+    </div>
+
+    <!-- <div id="txtCool">
+        Hello World
+    </div>
+    
+    <ul id="nav">
+        <li class="navitem">Uno</li>
+        <li class="navitem">Dos</li>
+        <li class="navitem">Tres</li>
+    </ul> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="/exercises/animation.js"></script>
+</body>
+</html>
