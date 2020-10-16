@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Introduction Lab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 5px;
+            font-family: sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            color: blue;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #item {
+            width: 500px;
+            height: 156px;
+            font-size: 1.5rem;
+            /* background-color: black; */
+        }
+
+        .image {
+            background-color: black;
+            width: 200%;
+
+            /* background-color: black; */
+        }
+
+        ul li {
+            width: 500px;
+            font-size: 17px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="item">
+            <h4>{{ message }}</h4>
+            <book-view id="item" v-for="book in books" v-bind:book="book"></book-view>
+            
+            <img class="image" v-for="book in books" v-bind:book="book" src="{{book.image}}"/>
+            
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./app/app.js"></script>
+</body>
+
+</html>

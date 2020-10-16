@@ -8,10 +8,18 @@
 </head>
 
 <body>
-    <div id="clock">
-        <p>{{message}}</p>
-        <button v-on:click="newMessage">ADD ONE MINUTE</button>
+
+    <div id="app">{{ message }}
+        <p>{{ purchases }}</p>
+        <ul>
+            <!-- <li v-for="coffee in coffees"> {{ coffee }}</li> -->
+            <coffee-view v-for="coffee in coffees" v-bind:coffee="coffee" v-bind:key="coffee.id">
+            </coffee-view>
+        </ul>
+        <button v-on:click="buyCoffee">Buy</button>
+        <button v-if="seeit">Buy More</button>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="vue.js"></script>
 </body>
