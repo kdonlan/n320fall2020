@@ -1,0 +1,66 @@
+{
+    "software": {
+        "applications": {
+            "Photoshop": [
+                {
+                    "developer": "Adobe",
+                    "uses": [
+                        {
+                            "tool": "Paintbrush",
+                            "format": ".psd"
+                        }
+                    ],
+                    "release-version": "21.2.4",
+                    "copyright": "2020"
+                }
+            ],
+            "Illustrator": [
+                {
+                    "developer": "Adobe",
+                    "uses": [
+                        {
+                            "tool": "Pen Tool",
+                            "format": ".ai"
+                        }
+                    ],
+                    "release-version": "21.3.7",
+                    "copyright": "2020"
+                }
+            ],
+            "InDesign": [
+                {
+                    "developer": "Adobe",
+                    "uses": [
+                        {
+                            "tool": "text box",
+                            "format": ".indd"
+                        }
+                    ],
+                    "release-version": "22.7.3",
+                    "copyright": "2020"
+                }
+            ]
+        }
+    }
+}
+
+
+
+{
+    "maker": "Jim Beam",
+    "types": [
+        {
+            "established": "Jul 9, 1901",
+            "id": 1,
+            "brand": "Maker's Mark",
+            "value": "$19.98"
+        },
+        {
+            "established": "May 11, 1911",
+            "id": 2,
+            "suite": "Knob Creek",
+            "value": "$24.99"
+        }
+    ]
+}
+}

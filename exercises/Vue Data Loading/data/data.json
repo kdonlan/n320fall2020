@@ -1,0 +1,17 @@
+{
+    "maker": "Jim Beam",
+    "types": [
+        {
+            "established": "Jul 9, 1901",
+            "id": 1,
+            "brand": "Maker's Mark",
+            "value": "$19.98"
+        },
+        {
+            "established": "May 11, 1911",
+            "id": 2,
+            "suite": "Knob Creek",
+            "value": "$24.99"
+        }
+    ]
+}
