@@ -1,28 +1,28 @@
-var $button = document.querySelector('.reset');
-$button.addEventListener('click', function () {
-    var duration = 0.3,
-        delay = 0.08;
-    TweenMax.to($button, duration, { scaleY: 1.6, ease: Expo.easeOut });
-    TweenMax.to($button, duration, { scaleX: 1.2, scaleY: 1, ease: Back.easeOut, delay: delay });
-    TweenMax.to($button, duration * 1.25, { scaleX: 1, scaleY: 1, ease: Back.easeOut, delay: delay * 3 });
-    location.reload();
-});
+// var $button = document.querySelector('.reset');
+// $button.addEventListener('click', function () {
+//     var duration = 0.3,
+//         delay = 0.08;
+//     TweenMax.to($button, duration, { scaleY: 1.6, ease: Expo.easeOut });
+//     TweenMax.to($button, duration, { scaleX: 1.2, scaleY: 1, ease: Back.easeOut, delay: delay });
+//     TweenMax.to($button, duration * 1.25, { scaleX: 1, scaleY: 1, ease: Back.easeOut, delay: delay * 3 });
+//     location.reload();
+// });
 
 
-//button animation click function
-var $button = document.querySelector('.button');
-$button.addEventListener('click', function () {
-    var duration = 0.3,
-        delay = 0.08;
-    TweenMax.to($button, duration, { scaleY: 1.6, ease: Expo.easeOut });
-    TweenMax.to($button, duration, { scaleX: 1.2, scaleY: 1, ease: Back.easeOut, delay: delay });
-    TweenMax.to($button, duration * 1.25, { scaleX: 1, scaleY: 1, ease: Back.easeOut, delay: delay * 3 });
-    let cardDealt = document.getElementsByClassName("card");
+// //button animation click function
+// var $button = document.querySelector('.button');
+// $button.addEventListener('click', function () {
+//     var duration = 0.3,
+//         delay = 0.08;
+//     TweenMax.to($button, duration, { scaleY: 1.6, ease: Expo.easeOut });
+//     TweenMax.to($button, duration, { scaleX: 1.2, scaleY: 1, ease: Back.easeOut, delay: delay });
+//     TweenMax.to($button, duration * 1.25, { scaleX: 1, scaleY: 1, ease: Back.easeOut, delay: delay * 3 });
+//     let cardDealt = document.getElementsByClassName("card");
 
-    for (let i = 0; i < cardDealt.length; i++) {
-        TweenLite.from(cardDealt[i], { duration: .25, x: -100, alpha: 0, delay: i * .25 });
-    }
-});
+//     for (let i = 0; i < cardDealt.length; i++) {
+//         TweenLite.from(cardDealt[i], { duration: .25, x: -100, alpha: 0, delay: i * .25 });
+//     }
+// });
 
 
 
