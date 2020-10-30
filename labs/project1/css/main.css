@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(21, 94, 38);
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+h2 a {
+    background-color: black;
+    font-family: 'Bree Serif', serif;
+    padding: 20px;
+    color: white;
+    letter-spacing: 1pt;
+    font-size: 2rem;
+}
+
+.cardsContainer1 {
+    width: 100%;
+    min-height: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: row;
+    align-items: space-around;
+    /* background-color: yellow; */
+}
+
+.cardsContainer2 {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: row;
+    align-items: space-around;
+    /* background-color: yellow; */
+}
+
+.card {
+    /* outline: black 3 solid;
+    width: 25%;
+    margin-left: 20px;
+    height: 275px;
+    /* background-color: #fff; */
+    padding: 20px;
+}
+
+.buttonContainer {
+    /* width: 20; */
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+#button {
+    margin-top: 50px;
+    margin-left: 20px;
+    background: yellow;
+    width: 230px;
+    height: 50px;
+    padding: 4px 0;
+    /* transform: translateX(-50%) translateY(-50%); */
+    border-radius: 3px;
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+}
+
+.deal,
+.reset {
+    margin-top: 50px;
+    margin-left: 20px;
+    background: yellow;
+    width: 230px;
+    height: 50px;
+    padding: 4px 0;
+    /* transform: translateX(-50%) translateY(-50%); */
+    border-radius: 3px;
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+}
+
+#button p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    user-select: none;
+}
+
+/* .deal, */
+.reset p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    user-select: none;
+}
+
+#button:hover {
+    cursor: none;
+}
+
+/* .deal, */
+.reset:hover {
+    cursor: none;
+}
+
+#button:after {
+    /* content: "";
+    /* display: block; */
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    /* border-radius: 50%; */
+    background-color: darken(#f1c40f, 20%);
+    opacity: 0.4;
+    bottom: -30px;
+}
+
+/* .deal, */
+.reset:after {
+    /* content: "";
+    /* display: block; */
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    /* border-radius: 50%; */
+    background-color: darken(#f1c40f, 20%);
+    opacity: 0.4;
+    bottom: -30px;
+    }
+
+h3 {
+    color: white;
+}
+
+#heart, #diamond {
+    fill: red;
+}
+
+#spade, #club {
+    padding: 10px;
+}

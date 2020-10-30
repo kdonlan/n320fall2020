@@ -1,0 +1,266 @@
+{
+    "cards": [
+      {
+        "suit": "hearts",
+        "value": 2,
+        "name": "Two",
+        "image": "./2H.png"
+      },
+      {
+        "suit": "hearts",
+        "value": 3,
+        "name": "Three"
+      },
+      {
+        "suit": "hearts",
+        "value": 4,
+        "name": "Four"
+      },
+      {
+        "suit": "hearts",
+        "value": 5,
+        "name": "Five"
+      },
+      {
+        "suit": "hearts",
+        "value": 6,
+        "name": "Six"
+      },
+      {
+        "suit": "hearts",
+        "value": 7,
+        "name": "Seven"
+      },
+      {
+        "suit": "hearts",
+        "value": 8,
+        "name": "Eight"
+      },
+      {
+        "suit": "hearts",
+        "value": 9,
+        "name": "Nine"
+      },
+      {
+        "suit": "hearts",
+        "value": 10,
+        "name": "Ten"
+      },
+      {
+        "suit": "hearts",
+        "value": "J",
+        "name": "Jack"
+      },
+      {
+        "suit": "hearts",
+        "value": "Q",
+        "name": "Queen"
+      },
+      {
+        "suit": "hearts",
+        "value": "K",
+        "name": "King"
+      },
+      {
+        "suit": "hearts",
+        "value": "A",
+        "name": "Ace"
+      },
+      {
+        "suit": "diamonds",
+        "value": 2,
+        "name": "Two"
+      },
+      {
+        "suit": "diamonds",
+        "value": 3,
+        "name": "Three"
+      },
+      {
+        "suit": "diamonds",
+        "value": 4,
+        "name": "Four"
+      },
+      {
+        "suit": "diamonds",
+        "value": 5,
+        "name": "Five"
+      },
+      {
+        "suit": "diamonds",
+        "value": 6,
+        "name": "Six"
+      },
+      {
+        "suit": "diamonds",
+        "value": 7,
+        "name": "Seven"
+      },
+      {
+        "suit": "diamonds",
+        "value": 8,
+        "name": "Eight"
+      },
+      {
+        "suit": "diamonds",
+        "value": 9,
+        "name": "Nine"
+      },
+      {
+        "suit": "diamonds",
+        "value": 10,
+        "name": "Ten"
+      },
+      {
+        "suit": "diamonds",
+        "value": "J",
+        "name": "Jack"
+      },
+      {
+        "suit": "diamonds",
+        "value": "Q",
+        "name": "Queen"
+      },
+      {
+        "suit": "diamonds",
+        "value": "K",
+        "name": "King"
+      },
+      {
+        "suit": "diamonds",
+        "value": "A",
+        "name": "Ace"
+      },
+      {
+        "suit": "clubs",
+        "value": 2,
+        "name": "Two"
+      },
+      {
+        "suit": "clubs",
+        "value": 3,
+        "name": "Three"
+      },
+      {
+        "suit": "clubs",
+        "value": 4,
+        "name": "Four"
+      },
+      {
+        "suit": "clubs",
+        "value": 5,
+        "name": "Five"
+      },
+      {
+        "suit": "clubs",
+        "value": 6,
+        "name": "Six"
+      },
+      {
+        "suit": "clubs",
+        "value": 7,
+        "name": "Seven"
+      },
+      {
+        "suit": "clubs",
+        "value": 8,
+        "name": "Eight"
+      },
+      {
+        "suit": "clubs",
+        "value": 9,
+        "name": "Nine"
+      },
+      {
+        "suit": "clubs",
+        "value": 10,
+        "name": "Ten"
+      },
+      {
+        "suit": "clubs",
+        "value": "J",
+        "name": "Jack"
+      },
+      {
+        "suit": "clubs",
+        "value": "Q",
+        "name": "Queen"
+      },
+      {
+        "suit": "clubs",
+        "value": "K",
+        "name": "King"
+      },
+      {
+        "suit": "clubs",
+        "value": "A",
+        "name": "Ace"
+      },
+      {
+        "suit": "spades",
+        "value": 2,
+        "name": "Two"
+      },
+      {
+        "suit": "spades",
+        "value": 3,
+        "name": "Three"
+      },
+      {
+        "suit": "spades",
+        "value": 4,
+        "name": "Four"
+      },
+      {
+        "suit": "spades",
+        "value": 5,
+        "name": "Five"
+      },
+      {
+        "suit": "spades",
+        "value": 6,
+        "name": "Six", 
+        "image":"./2H.png"
+      },
+      {
+        "suit": "spades",
+        "value": 7,
+        "name": "Seven"
+      },
+      {
+        "suit": "spades",
+        "value": 8,
+        "name": "Eight"
+      },
+      {
+        "suit": "spades",
+        "value": 9,
+        "name": "Nine"
+      },
+      {
+        "suit": "spades",
+        "value": 10,
+        "name": "Ten"
+      },
+      {
+        "suit": "spades",
+        "value": "J",
+        "name": "Jack"
+      },
+      {
+        "suit": "spades",
+        "value": "Q",
+        "name": "Queen"
+      },
+      {
+        "suit": "spades",
+        "value": "K",
+        "name": "King"
+      },
+      {
+        "suit": "spades",
+        "value": "A",
+        "name": "Ace"
+      }
+    ]
+}

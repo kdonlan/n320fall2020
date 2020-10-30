@@ -1,0 +1,316 @@
+{
+  "cards": [
+    {
+      "suit": "hearts",
+      "value": 2,
+      "name": "Two",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": 3,
+      "name": "Three", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": 4,
+      "name": "Four", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": 5,
+      "name": "Five", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": 6,
+      "name": "Six", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": 7,
+      "name": "Seven", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": 8,
+      "name": "Eight", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": 9,
+      "name": "Nine", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": 10,
+      "name": "Ten", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": "J",
+      "name": "Jack", 
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": "Q",
+      "name": "Queen",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": "K",
+      "name": "King",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "hearts",
+      "value": "A",
+      "name": "Ace",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 2,
+      "name": "Two",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 3,
+      "name": "Three",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 4,
+      "name": "Four",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 5,
+      "name": "Five",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 6,
+      "name": "Six",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 7,
+      "name": "Seven",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 8,
+      "name": "Eight",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 9,
+      "name": "Nine",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": 10,
+      "name": "Ten",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": "J",
+      "name": "Jack",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": "Q",
+      "name": "Queen",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": "K",
+      "name": "King",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "diamonds",
+      "value": "A",
+      "name": "Ace",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 2,
+      "name": "Two",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 3,
+      "name": "Three",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 4,
+      "name": "Four",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 5,
+      "name": "Five",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 6,
+      "name": "Six",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 7,
+      "name": "Seven",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 8,
+      "name": "Eight",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 9,
+      "name": "Nine",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": 10,
+      "name": "Ten",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": "J",
+      "name": "Jack",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": "Q",
+      "name": "Queen",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": "K",
+      "name": "King",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "clubs",
+      "value": "A",
+      "name": "Ace",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 2,
+      "name": "Two",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 3,
+      "name": "Three",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 4,
+      "name": "Four",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 5,
+      "name": "Five",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 6,
+      "name": "Six", 
+      "image":"./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 7,
+      "name": "Seven",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 8,
+      "name": "Eight",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 9,
+      "name": "Nine",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": 10,
+      "name": "Ten",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": "J",
+      "name": "Jack",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": "Q",
+      "name": "Queen",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": "K",
+      "name": "King",
+      "image": "./2H.png"
+    },
+    {
+      "suit": "spades",
+      "value": "A",
+      "name": "Ace",
+      "image": "./2H.png"
+    }
+  ]
+}
