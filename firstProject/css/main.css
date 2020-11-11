@@ -14,7 +14,7 @@ body {
     background-color: black;
 }
 
-.cardContainer {
+#cardContainer {
     width: 75%;
     margin: auto;
     min-height: 400px;
