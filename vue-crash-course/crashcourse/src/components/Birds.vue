@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>The Birds I have seen are highlighted:</h3>
+    <h3>The birds I have seen are highlighted below:</h3>
     <div v-for="bird in birds" v-bind:key="bird.id">
         <BirdItem v-bind:bird="bird"/>
     </div>

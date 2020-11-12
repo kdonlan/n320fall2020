@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Common Indiana" />
+    <HelloWorld msg="Common Birds Found in Indiana" />
     <Birds v-bind:birds="birds"/>
   </div>
 </template>
