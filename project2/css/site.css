@@ -11435,7 +11435,7 @@ screen and (-ms-high-contrast:none) {
 	position: relative
 }
 
-.play-type-filter,
+/* .play-type-filter,
 .sort-filter,
 .type-filter {
 	border-radius: 5px;
@@ -11445,7 +11445,7 @@ screen and (-ms-high-contrast:none) {
 	user-appearance: menulist;
 	border: 1px solid #ebebeb;
 	font-size: 12px
-}
+} */
 
 .play-type-filter::-webkit-input-placeholder,
 .sort-filter::-webkit-input-placeholder,
@@ -12220,7 +12220,7 @@ screen and (-ms-high-contrast:none) {
 
 #particles1 canvas {
 	display: block;
-	vertical-align: bottom
+	/* vertical-align: bottom; */
 }
 
 .blur {
@@ -19617,9 +19617,9 @@ screen and (min-width:768px) and (-ms-high-contrast:none) {
 	}
 }
 
-.quiz-select-all {
+/* .quiz-select-all {
 	disprogress-barlay: block
-}
+} */
 
 #quizResults {
 	background: url(/Content/img/hl-scratch-game-pattern.png) repeat 0 0 transparent;
