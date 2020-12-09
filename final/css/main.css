@@ -1,7 +1,10 @@
-/* body {
-	background-image: url("./images/30th-background-desktop.jpg");
-	background-size: cover;
-} */
+body {
+		background-color: #565655;
+		background-image: url("../images/30th-background-desktop_.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+}
+
 @font-face {
 	font-family: noyhabistro-sack;
 	src: url(d4b5827f98fdcf07c29d4c13d0830e30.woff2) format("woff2"), url(5f4d073294fdb194f8ac3e841ba8d570.woff) format("woff");
@@ -80,9 +83,6 @@ p {
 	clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0)
 }
 
-body {
-	background-color: #F5F5F5;
-}
 
 .column-1 {
 	width: 8.333333333333333%
@@ -212,11 +212,11 @@ body {
 .grid-width3,
 .grid-width6 {
 	max-height: 270px!important;
-	max-width: 530px!important
+	max-width: 800px!important
 }
 
 .grid-width8 {
-	max-width: 700px!important
+	max-width: 800px!important
 }
 
 .tab .effect img {
