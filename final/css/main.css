@@ -212,11 +212,11 @@ p {
 .grid-width3,
 .grid-width6 {
 	max-height: 270px!important;
-	max-width: 800px!important
+	max-width: 530px!important
 }
 
 .grid-width8 {
-	max-width: 800px!important
+	max-width: 700px!important
 }
 
 .tab .effect img {
@@ -584,4 +584,75 @@ p {
 	.effect h2 {
 		font-size: 1.3rem!important
 	}
+}
+
+.titleWrapper{
+	width: 400px;
+	margin: auto;
+	text-align:center;
+	height:80px;
+	overflow:hidden;
+	text-align:center;
+}
+h1{
+	color:#292929;
+	font-size: 40px;
+	margin:0;
+	padding:0;
+	line-height:80px;
+	height:80px;
+	position: relative;
+	font-family: 'Courier Prime', monospace;
+	/* text-transform: uppercase; */
+	word-space: 4em;
+	letter-spacing: 0.05em;
+}
+h1 span{
+	color: gray;
+	display: inline-block;
+	transform: translateY(100%);
+	transition: all 0.25s cubic-bezier(0.65, 0, 0.21, 1.47) 0s;
+}
+
+.titleWrapper.ready h1 span{
+	transform: translateY(0%);
+}
+
+h1.first span{
+	/* background:#fafafa; */
+	position:relative;
+	z-index:5;
+}
+h1.second span{
+	position:relative;
+	z-index:1;
+}
+h1.third span{
+	position:relative;
+	z-index:2;
+}
+
+
+
+$num: 1;
+
+@while $num < 20 {
+    h1.first span:nth-of-type(#{$num}) {
+			transition-delay: 0.02s * $num;
+    }
+		h1.second span:nth-of-type(#{$num}) {
+			transition-delay: 0.03s * $num + 0.05;
+    }
+
+    $num: $num + 1;
+}
+
+
+
+
+.titleWrapper.ready:hover h1.first span{
+	transform: translateY(-100%);
+}
+.titleWrapper.ready:hover h1.second span{
+	transform: translateY(-100%);
 }
