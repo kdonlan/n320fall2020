@@ -1,4 +1,5 @@
 body {
+
 		background-color: #565655;
 		background-image: url("../images/30th-background-desktop_.jpg");
 		background-size: cover;
@@ -132,7 +133,10 @@ p {
 
 .column-12,
 .wrapper-full {
-	width: 100%
+	width: 100%;
+	margin:0 auto;
+	background-color: white
+	border-radius: 12px;
 }
 
 
@@ -189,6 +193,7 @@ p {
 
 .tab-container {
 	padding: 50px 0
+	
 }
 
 .tab-head {
@@ -596,11 +601,11 @@ p {
 }
 h1{
 	color:#292929;
-	font-size: 40px;
+	font-size: 55px;
 	margin:0;
 	padding:0;
-	line-height:80px;
-	height:80px;
+	line-height:100px;
+	height:100px;
 	position: relative;
 	font-family: 'Courier Prime', monospace;
 	/* text-transform: uppercase; */
@@ -608,7 +613,7 @@ h1{
 	letter-spacing: 0.05em;
 }
 h1 span{
-	color: gray;
+	color: white;
 	display: inline-block;
 	transform: translateY(100%);
 	transition: all 0.25s cubic-bezier(0.65, 0, 0.21, 1.47) 0s;
@@ -652,7 +657,12 @@ $num: 1;
 
 .titleWrapper.ready:hover h1.first span{
 	transform: translateY(-100%);
+	width: 1200px;
 }
 .titleWrapper.ready:hover h1.second span{
 	transform: translateY(-100%);
 }
+
+/* #infoCard {
+	background: #42b078;
+} */

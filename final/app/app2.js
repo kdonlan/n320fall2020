@@ -1,4 +1,3 @@
-
 //describes the player class
 class Player {
     constructor(firstName, city, game) { //need to add story in constructor for flip eventually
@@ -17,8 +16,7 @@ class Player {
                     <p>${this.game}</p></div>`
             )
 
-            })
-        
+            })       
 }
 }
 
@@ -29,8 +27,10 @@ class Player {
     .then((data) => {
         console.log(data);
         $(document).ready(function () {
+            console.log(data.city);
             // let player = new Player(this.firstName.value, this.city.value, this.game.value);
-            let data = new Player(firstName.value, data.city.value, data.game.value);
+            let  = new Player(firstName.value, data.city, data.game);
+
 
             this.player.renderPlayerInfo();  
             })
