@@ -1,18 +1,11 @@
 body {
-
-	background-color: #565655;
-	background-image: url("../images/30th-background-desktop_.jpg");
+	/* background-color: #565655; */
+	/* background-image: url("../images/30th-background-desktop_.jpg"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-@font-face {
-font-family: noyhabistro-sack;
-src: url(d4b5827f98fdcf07c29d4c13d0830e30.woff2) format("woff2"), url(5f4d073294fdb194f8ac3e841ba8d570.woff) format("woff");
-font-weight: 400;
-font-style: normal
-}
-
+/* //city text style */
 h3 {
 font-size: 1rem;
 margin-top: 10px;
@@ -21,11 +14,11 @@ font-family: 'Montserrat', sans-serif;
 font-weight: 400;
 }
 
-p {
+/* p {
 font-family: 'Courier Prime', monospace;	
-}
+} */
 
-
+/* //sets all to border-box */
 *,
 :after,
 :before {
@@ -33,37 +26,35 @@ box-sizing: border-box
 }
 
 
-
 .header {
 width: 100%;
 /* height: 100px; */
-background-image: #fff;
+/* background-image: #fff; */
 }
 
-.column-1,
-.column-10,
-.column-11,
+
+/* //all the styles for the boxes in the rows */
 .column-12,
-.column-2,
+.column-6,
 .column-3,
 .column-4,
-.column-5,
-.column-7,
-.column-8,
-.column-9 {
+.column-8
+{
 float: left;
 padding: 15px
 }
 
-.effectTab-header .title::before {
+/* DOES NOTHING------- */
+/* .effectTab-header .title::before { NOTHING-------
 left: 0;
 width: 156%;
 height: 3px;
 margin-left: -28%;
 bottom: -1.5px
-}
+} */
 
-.effectTab-header .title::after {
+/* DOES NOTHING------- */
+/* .effectTab-header .title::after {
 left: 50%;
 width: 25px;
 height: 25px;
@@ -71,27 +62,15 @@ bottom: -26px;
 margin: 0 0 0 -10px;
 -webkit-clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0);
 clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0)
-}
+} */
 
-
-.column-1 {
-width: 8.333333333333333%
-}
-
-.column-2 {
-width: 16.66666666666667%
-}
 
 .column-3 {
 width: 25%
 }
 
 .column-4 {
-width: 33.33333333333333%
-}
-
-.column-5 {
-width: 41.66666666666667%
+width: 40%
 }
 
 .column-6 {
@@ -100,26 +79,12 @@ float: left;
 padding: 15px
 }
 
-.column-7 {
-width: 58.33333333333333%
-}
-
 .column-8 {
-width: 66.66666666666667%
+width: 60%
 }
 
-.column-9 {
-width: 75%
-}
 
-.column-10 {
-width: 83.33333333333333%
-}
-
-.column-11 {
-width: 91.66666666666667%
-}
-
+/* each of the 3 sections background (including header) rounded corners*/
 .column-12,
 .wrapper-full {
 width: 100%;
@@ -128,113 +93,107 @@ margin:0 auto;
 border-radius: 12px;
 }
 
-
+/* DOES NOTHING------- */
 /* .custom-row::after {
 content: "";
 display: table;
 clear: both
 } */
 
+/* each of the 3 sections background */
 .wrapper {
 max-width: 1140px;
 margin: 0 auto;
 position: relative
 }
 
-.header {
-background-color: #485666;
-padding: 8px 0;
-position: static;
-z-index: 2000
-}
-
-.header h1 {
-color: #fff;
-font-family: 'Montserrat', sans-serif;
-font-weight: 400;
-font-size: 2.2rem;
-padding-left: 40px
-}
-
-.rotate {
+/* DOES NOTHING------- */
+/* .rotate {
 position: absolute;
 transform: rotate(-20deg);
 left: 0;
 font-size: 2.8rem;
 top: 5px
-}
+} */
 
-.ex_padd {
-padding-top: 170px!important
-}
 
 
 .box-tab {
 margin: 10px 0
+
 }
 
+/* //all boxes with shadow and outline image is within them */
 .effect {
-margin: auto;
+/* margin: auto; */
 box-shadow: 0 0 15px 5px rgba(0, 0, 0, .07);
 background-color: #fff;
-border: 5px solid #f5f5f5
+outline:6px solid white;
+outline-offset: -1;
+width: 100%;
+height: 100%;
+position: absolute;
+-webkit-transition: -webkit-transform 1s;
+-moz-transition: -moz-transform 1s;
+-o-transition: -o-transform 1s;
+transition: transform 1s;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
 }
 
-.tab-container {
+/* DOES NOTHING------- */
+/* .tab-container {
 padding: 50px 0
 
-}
+} */
 
-.tab-head {
+/* DOES NOTHING------- */
+/* .tab-head {
 text-align: center;
 padding-bottom: 10px;
 margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto
-}
+} */
 
+/* big container for all boxes / keeps the text in the right place------- */
 .tab .effect {
 position: relative;
 overflow: hidden;
-max-height: 240px;
-max-width: 350px;
-background: #3085a3;
-text-align: center;
+max-height: 600px;
+max-width: 801px;
+/* background: #297d9b; */
+/* text-align: center; */
 cursor: pointer
 }
 
+/* width of styles 3 and 6------- */
 .grid-width3,
 .grid-width6 {
-max-height: 270px!important;
-max-width: 530px!important
+max-height: 600px!important;
+max-width: 525px!important
 }
 
+/* width of style 8------- */
 .grid-width8 {
-max-width: 700px!important
+max-width: 750px!important
 }
 
-#front {
-	
-}
-
-#back {
-	-webkit-transform: rotateY( 180deg );
-	-moz-transform: rotateY( 180deg );
-	-o-transform: rotateY( 180deg );
-	transform: rotateY( 180deg );
-
-}
-
-.tab .effect img {
+/* DOES NOTHING------- */
+/* .tab .effect img {
 position: relative;
 display: block;
 min-height: 100%;
 opacity: .8
-}
+} */
 
+/* Main styling for text------- */
 .tab .effect .tab-text {
 padding: 2em;
 color: #fff;
+text-shadow: rgb(0, 0, 0, .4);
 text-transform: uppercase;
 font-size: 1.25rem;
 -webkit-backface-visibility: hidden;
@@ -248,6 +207,7 @@ height: 100%
 
 .tab-text h2 {
 color: #fff;
+text-shadow: rgb(0, 0, 0, .4);
 margin: 0;
 font-size: 1.5rem
 }
@@ -264,134 +224,94 @@ display: none
 }
 
 @media (max-width:575px) {
-.column-xs-1,
-.column-xs-10,
-.column-xs-11,
 .column-xs-12,
-.column-xs-2,
 .column-xs-3,
-.column-xs-4,
-.column-xs-5,
-.column-xs-7,
-.column-xs-8,
-.column-xs-9 {
+.column-xs-8 {
 	float: left;
 	padding: 15px
 }
-.column-xs-1 {
-	width: 8.333333333333333%
-}
-.column-xs-2 {
-	width: 16.66666666666667%
-}
+
+
 .column-xs-3 {
 	width: 25%
 }
 .column-xs-4 {
 	width: 33.33333333333333%
 }
-.column-xs-5 {
-	width: 41.66666666666667%
-}
+
 .column-xs-6 {
 	width: 50%;
 	float: left;
 	padding: 15px
 }
-.column-xs-7 {
-	width: 58.33333333333333%
-}
+
 .column-xs-8 {
 	width: 66.66666666666667%
 }
-.column-xs-9 {
-	width: 75%
-}
-.column-xs-10 {
-	width: 83.33333333333333%
-}
-.column-xs-11 {
-	width: 91.66666666666667%
-}
+
 .column-xs-12 {
 	width: 100%
 }
+
+/* HIDE ?????????????????????????????? */
 .hide-xs {
 	display: none
 }
+/* ??????????????????????????????????????? */
+
+/* important but do not know why! */
 .effectTab-header .title::before {
 	width: 125%;
 	left: 15%
 }
-.tab-container {
+/* seemingly does nothing */
+/* .tab-container {
 	padding-top: 25px;
 	padding-bottom: 25px
-}
+} */
 }
 
 @media (min-width:576px) and (max-width:767px) {
-.column-sm-1,
-.column-sm-10,
-.column-sm-11,
 .column-sm-12,
-.column-sm-2,
 .column-sm-3,
 .column-sm-4,
-.column-sm-5,
-.column-sm-7,
-.column-sm-8,
-.column-sm-9 {
+.column-sm-8{
 	float: left;
 	padding: 15px
 }
-.column-sm-1 {
-	width: 8.333333333333333%
-}
-.column-sm-2 {
-	width: 16.66666666666667%
-}
+
 .column-sm-3 {
 	width: 25%
 }
 .column-sm-4 {
 	width: 33.33333333333333%
 }
-.column-sm-5 {
-	width: 41.66666666666667%
-}
-.column-sm-6 {
-	width: 50%;
-	float: left;
-	padding: 15px
-}
-.column-sm-7 {
-	width: 58.33333333333333%
-}
+
 .column-sm-8 {
 	width: 66.66666666666667%
 }
-.column-sm-9 {
-	width: 75%
-}
-.column-sm-10 {
-	width: 83.33333333333333%
-}
-.column-sm-11 {
-	width: 91.66666666666667%
-}
+
 .column-sm-12 {
 	width: 100%
 }
-.hide-sm {
+/* NEITHER HIDE OR VISIBLE DOING NOTHING */
+/* HIDE ?????????????????????????????? */
+/* .hide-sm {
 	display: none
-}
-.visible-sm {
+} */
+/*???????????????????????????????????? */
+
+/* VISIBLE ?????????????????????????????? */
+/* .visible-sm {
 	display: block
-}
-.tab-container {
+} */
+/*???????????????????????????????????? */
+
+/* DOES NOTHING------- */
+/* .tab-container {
 	padding-top: 25px;
 	padding-bottom: 25px
-}
+} */
 }
 
 @media (max-width:1000px) {
@@ -402,78 +322,57 @@ display: none
 	left: 30px
 }
 @media (min-width:768px) and (max-width:991px) {
-	.column-md-1,
-	.column-md-10,
-	.column-md-11,
 	.column-md-12,
-	.column-md-2,
 	.column-md-3,
 	.column-md-4,
-	.column-md-5,
-	.column-md-7,
-	.column-md-8,
-	.column-md-9 {
+	.column-md-8 {
 		float: left;
 		padding: 15px
 	}
-	.column-md-1 {
-		width: 8.333333333333333%
-	}
-	.column-md-2 {
-		width: 16.66666666666667%
-	}
+
 	.column-md-3 {
 		width: 25%
 	}
 	.column-md-4 {
 		width: 33.33333333333333%
 	}
-	.column-md-5 {
-		width: 41.66666666666667%
-	}
+
 	.column-md-6 {
 		width: 50%;
 		float: left;
 		padding: 15px
 	}
-	.column-md-7 {
-		width: 58.33333333333333%
-	}
+	
 	.column-md-8 {
 		width: 66.66666666666667%
 	}
-	.column-md-9 {
-		width: 75%
-	}
-	.column-md-10 {
-		width: 83.33333333333333%
-	}
-	.column-md-11 {
-		width: 91.66666666666667%
-	}
+	
 	.column-md-12 {
 		width: 100%
 	}
-	.hide-md {
+
+	/* NEITHER HIDE OR VISIBLE DOING NOTHING */
+	/* HIDE ?????????????????????????????? */
+	/* .hide-md {
 		display: none
-	}
-	.visible-md {
+	} */
+	/*???????????????????????????????????? */
+
+	/* VISIBLE ?????????????????????????????? */
+	/* .visible-md {
 		display: block
-	}
+	} */
+	/*???????????????????????????????????? */
 }
 }
 
+/* background color of the boxes that do not have full fill image */
 .effect.effect-twelve {
 	background: #42b078;
+	
 }
 
-/* .effect.effect-twelveb {
-	-webkit-transform: rotateY( 180deg );
-	-moz-transform: rotateY( 180deg );
-	-o-transform: rotateY( 180deg );
-	transform: rotateY( 180deg );
-} */
-
+/* styles the first names */
 .effect-twelve .tab-text h2 {
 position: relative;
 padding: .5em 0;
@@ -483,24 +382,27 @@ font-family: noyhabistro-sack,Arial,Helvetica,sans-serif;
 font-size: 2rem;
 }
 
+/* hover line stying */
 .effect.effect-twelve h2:after {
+/* this is the line transforming in */
 content: "";
 position: absolute;
 bottom: 0;
 left: 0;
 width: 100%;
 height: 3px;
-background-color: #fff;
+background-color: rgb(255, 255, 255);
 transform: translate3d(-100%, 0, 0);
 transition: all .35s;
 -webkit-transform: translate3d(-100%, 0, 0);
 -webkit-transition: all .35s
 }
-
+/* also line style */
 .effect.effect-twelve:hover h2:after {
 transform: translate3d(0, 0, 0)
 }
 
+/* styles the game type */
 .effect-twelve .tab-text p {
 padding: .7em 0;
 font-size: 1.8rem;
@@ -515,32 +417,43 @@ font-family: 'Courier Prime', monospace;
 text-transform: lowercase;
 }
 
+.effect-twelve .tab-text div {
+	font-size: 21px;
+	margin-top: 10px;
+	width: 150px;
+	line-height: 30px;
+	text-transform: none;
+}
+
+
+/* brings the game type into view */
 .effect-twelve:hover p {
 transform: translate3d(0, 0, 0);
 -webkit-transform: translate3d(0, 0, 0);
 opacity: 1
 }
 
-.effect.effect-twelve img {
-/* max-width: none; */
+/* DOES NOTHING------- */
+/* .effect.effect-twelve img {
+max-width: none;
 opacity: 1;
 transform: translate3d(-10px, 0, 0);
 transition: all .35s;
 -webkit-transform: translate3d(-10px, 0, 0);
 -webkit-transition: all .35s
-}
+} */
 
-
+/* puts the overlay on the box to show the text better */
 .effect.effect-twelve:hover img {
 transform: translate3d(0, 0, 0);
 -webkit-transform: translate3d(0, 0, 0);
-opacity: .4
+opacity: .3
 }
 
-
-.effect.effect-twelveb:hover img {
+/* DOES NOTHING------- */
+/* .effect.effect-twelveb:hover img {
     background:none;
-}
+} */
 
 
 @media (max-width:575px) {
@@ -565,6 +478,7 @@ opacity: .4
 }
 }
 
+/* container for the headline */
 .titleWrapper{
 width: 400px;
 margin: auto;
@@ -573,6 +487,8 @@ height:80px;
 overflow:hidden;
 text-align:center;
 }
+
+/* DOES NOTHING------- */
 h1{
 color:#292929;
 font-size: 55px;
@@ -581,11 +497,12 @@ padding:0;
 line-height:100px;
 height:100px;
 position: relative;
-font-family: 'Courier Prime', monospace;
-/* text-transform: uppercase; */
-word-space: 4em;
+font-family: noyhabistro-sack,Arial,Helvetica,sans-serif;
 letter-spacing: 0.05em;
+text-transform: uppercase;
 }
+
+/* styles the headline/controls the movement */
 h1 span{
 color: white;
 display: inline-block;
@@ -593,12 +510,13 @@ transform: translateY(100%);
 transition: all 0.25s cubic-bezier(0.65, 0, 0.21, 1.47) 0s;
 }
 
+/* makes the first instance show on the page */
 .titleWrapper.ready h1 span{
 transform: translateY(0%);
 }
 
+/* controls each of the headlines */
 h1.first span{
-/* background:#fafafa; */
 position:relative;
 z-index:5;
 }
@@ -606,53 +524,33 @@ h1.second span{
 position:relative;
 z-index:1;
 }
-h1.third span{
-position:relative;
-z-index:2;
-}
 
 
 
-$num: 1;
-
-@while $num < 20 {
-h1.first span:nth-of-type(#{$num}) {
-		transition-delay: 0.02s * $num;
-}
-	h1.second span:nth-of-type(#{$num}) {
-		transition-delay: 0.03s * $num + 0.05;
-}
-
-$num: $num + 1;
-}
-
-
-
-
+/* takes the first headline away by moving on the - y axis*/
 .titleWrapper.ready:hover h1.first span{
 transform: translateY(-100%);
-width: 1200px;
 }
+/* takes the second headline away by moving on the - y axis*/
 .titleWrapper.ready:hover h1.second span{
 transform: translateY(-100%);
 }
 
-
+/* text within the white quote box //maybe add animation to this */ 
 .tab .effect .tab-textb {
     padding: 15px;
-    olor: #115454;
+    color: #115454;
     text-transform: none;
     font-size: 1.25rem;
-    /* -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 	}
-
-
+/* styles the first quotation mark */
 .tab-textb h2 {
 	width: 10%;
     color: rgb(95, 196, 6);
@@ -661,7 +559,7 @@ transform: translateY(-100%);
     text-align: left;   
     opacity: 80%;
 	}
-
+/* styles the second quotation mark */
 .tab-textb h4 {
     width: 100%;
     color: rgb(95, 196, 6);
@@ -675,79 +573,47 @@ transform: translateY(-100%);
 
 .tab-textb h3 {
     font-size: 1rem;
-    margin-top: 10px; 
+    margin-top: -42px; 
     text-align: left;
     color: #115454;
-	line-height: 21px;
+	line-height: 25px;
 }
 
-/* #front {
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
+/* this is the simple flipping example */
 
-#back {
+/* my projects "container" */
+/* column-4, 
+column-xs-12, 
+column-sm-6, 
+column-md-6,
+div
+ {
+	-webkit-perspective: 1000px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+	perspective: 800px;
+	background-color: none;
+
+} */
+
+/* ny projects "card div" .card .front, etc. */
+
+/* #front div {
 	-webkit-transform: rotateY( 180deg );
-	-moz-transform: rotateY( 180deg );
-	-o-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
 	transform: rotateY( 180deg );
 } */
 
-
-
-.container {
-    width: 200px;
-    height: 260px;
-    position: relative;
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-    perspective: 800px;
-}
-.card {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 50%;
-}
-.card div {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 260px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 140px;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
+/* my projects back for rotation */
+/* #back {
+	-webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.card .front {
-  background: beige;
-}
-.card .back {
-    background: blue;
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-}
-.card.flipped {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
+	backface-visibility: hidden;
+	
+} */
+.animate div {
+	width: 125px;
+	text-transform: none;
 }
