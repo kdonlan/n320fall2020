@@ -61,7 +61,7 @@
 	},
 	{
 		"firstName": "Daniel",
-		"city": "Logansport",
+		"city": "Hope",
 		"game": "Draw",
 		"story": "I enjoy putting my money back into the lottery funds to help fellow Hoosiers!"
 	},  
@@ -76,18 +76,18 @@
 		"city": "Indianapolis",
 		"game": "Scratch-offs",
 		"story": "I love playing the Scratch-offs, and I can give them to family and friends for birthdays and holidays."
-	},  
-	{
-		"firstName": "Adrienne",
-		"city": "Bourbon",
-		"game": "Scratch-offs",
-		"story": "It’s exciting to play! I love the huge variety of different games! Always something new and fun to play!"
-	},  
+	},
 	{
 		"firstName": "Michael",
 		"city": "Valparaiso",
 		"game": "Draw",
 		"story": "I have been playing ever since Indiana started their lottery, and I find it exciting to play responsibly while trying to win a life changing amount."
-	}  
+	},    
+	{
+		"firstName": "Adrienne",
+		"city": "Bourbon",
+		"game": "Scratch-offs",
+		"story": "It’s exciting to play! I love the huge variety of different games! Always something new and fun to play!"
+	}
 
 ]
