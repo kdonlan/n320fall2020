@@ -1,50 +1,64 @@
 body {
 	/* background-color: #565655; */
-	/* background-image: url("../images/30th-background-desktop_.jpg"); */
+	background-image: url("../images/30th-background-desktop_.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+
 /* //city text style */
+
 h3 {
-font-size: 1rem;
-margin-top: 10px;
-text-align: left;
-font-family: 'Montserrat', sans-serif;
-font-weight: 400;
+	font-size: 1rem;
+	margin-top: 10px;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 }
+
 
 /* p {
 font-family: 'Courier Prime', monospace;	
 } */
 
+
 /* //sets all to border-box */
+
 *,
 :after,
 :before {
-box-sizing: border-box
+	box-sizing: border-box
 }
 
-
 .header {
-width: 100%;
-/* height: 100px; */
-/* background-image: #fff; */
+	width: 100%;
+	/* height: 100px; */
+	/* background-image: #fff; */
+}
+
+#logo {
+	width: 200px;
+	float: right;
+	margin-right: 50px;
+	/* -webkit-filter: drop-shadow(10px 10px 5px rgba(96, 66, 66, 0.2)); */
 }
 
 
 /* //all the styles for the boxes in the rows */
+
 .column-12,
 .column-6,
 .column-3,
 .column-4,
-.column-8
-{
-float: left;
-padding: 15px
+.column-8 {
+	float: left;
+	padding: 15px
 }
 
+
 /* DOES NOTHING------- */
+
+
 /* .effectTab-header .title::before { NOTHING-------
 left: 0;
 width: 156%;
@@ -53,7 +67,10 @@ margin-left: -28%;
 bottom: -1.5px
 } */
 
+
 /* DOES NOTHING------- */
+
+
 /* .effectTab-header .title::after {
 left: 50%;
 width: 25px;
@@ -64,50 +81,58 @@ margin: 0 0 0 -10px;
 clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0)
 } */
 
-
 .column-3 {
-width: 25%
+	width: 25%
 }
 
 .column-4 {
-width: 40%
+	width: 40%
 }
 
 .column-6 {
-width: 50%;
-float: left;
-padding: 15px
+	width: 50%;
+	float: left;
+	padding: 15px
 }
 
 .column-8 {
-width: 60%
+	width: 60%
 }
 
 
 /* each of the 3 sections background (including header) rounded corners*/
+
 .column-12,
 .wrapper-full {
-width: 100%;
-margin:0 auto;
-/* background-color: white; */
-border-radius: 12px;
+	width: 100%;
+	margin: 0 auto;
+	/* background-color: white; */
+	border-radius: 12px;
 }
 
+
 /* DOES NOTHING------- */
+
+
 /* .custom-row::after {
 content: "";
 display: table;
 clear: both
 } */
 
+
 /* each of the 3 sections background */
+
 .wrapper {
-max-width: 1140px;
-margin: 0 auto;
-position: relative
+	max-width: 1140px;
+	margin: 0 auto;
+	position: relative
 }
 
+
 /* DOES NOTHING------- */
+
+
 /* .rotate {
 position: absolute;
 transform: rotate(-20deg);
@@ -116,40 +141,45 @@ font-size: 2.8rem;
 top: 5px
 } */
 
-
-
 .box-tab {
-margin: 10px 0
-
+	margin: 10px 0
 }
+
 
 /* //all boxes with shadow and outline image is within them */
+
 .effect {
-/* margin: auto; */
-box-shadow: 0 0 15px 5px rgba(0, 0, 0, .07);
-background-color: #fff;
-outline:6px solid white;
-outline-offset: -1;
-width: 100%;
-height: 100%;
-position: absolute;
--webkit-transition: -webkit-transform 1s;
--moz-transition: -moz-transform 1s;
--o-transition: -o-transform 1s;
-transition: transform 1s;
--webkit-transform-style: preserve-3d;
--moz-transform-style: preserve-3d;
--o-transform-style: preserve-3d;
-transform-style: preserve-3d;
+	/* margin: auto; */
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .07);
+	background-color: #fff;
+	outline: 6px solid white;
+	outline-offset: -1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 
+
 /* DOES NOTHING------- */
+
+
 /* .tab-container {
 padding: 50px 0
 
 } */
 
+
 /* DOES NOTHING------- */
+
+
 /* .tab-head {
 text-align: center;
 padding-bottom: 10px;
@@ -158,30 +188,39 @@ margin-left: auto;
 margin-right: auto
 } */
 
+
 /* big container for all boxes / keeps the text in the right place------- */
+
 .tab .effect {
-position: relative;
-overflow: hidden;
-max-height: 600px;
-max-width: 801px;
-/* background: #297d9b; */
-/* text-align: center; */
-cursor: pointer
+	position: relative;
+	overflow: hidden;
+	max-height: 600px;
+	max-width: 801px;
+	/* background: #297d9b; */
+	/* text-align: center; */
+	cursor: pointer
 }
+
 
 /* width of styles 3 and 6------- */
+
 .grid-width3,
 .grid-width6 {
-max-height: 600px!important;
-max-width: 525px!important
+	max-height: 600px!important;
+	max-width: 525px!important
 }
+
 
 /* width of style 8------- */
+
 .grid-width8 {
-max-width: 750px!important
+	max-width: 750px!important
 }
 
+
 /* DOES NOTHING------- */
+
+
 /* .tab .effect img {
 position: relative;
 display: block;
@@ -189,232 +228,226 @@ min-height: 100%;
 opacity: .8
 } */
 
+
 /* Main styling for text------- */
+
 .tab .effect .tab-text {
-padding: 2em;
-color: #fff;
-text-shadow: rgb(0, 0, 0, .4);
-text-transform: uppercase;
-font-size: 1.25rem;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%
+	padding: 2em;
+	color: #fff;
+	text-shadow: rgb(0, 0, 0, .4);
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
 }
 
 .tab-text h2 {
-color: #fff;
-text-shadow: rgb(0, 0, 0, .4);
-margin: 0;
-font-size: 1.5rem
+	color: #fff;
+	text-shadow: rgb(0, 0, 0, .4);
+	margin: 0;
+	font-size: 1.5rem
 }
 
 .tab-text p {
-color: #fff;
-margin: 0;
-font-size: 1rem;
-font-family: 'Courier Prime', monospace;
+	color: #fff;
+	margin: 0;
+	font-size: 1rem;
+	font-family: 'Courier Prime', monospace;
 }
 
 .hide {
-display: none
+	display: none
 }
 
 @media (max-width:575px) {
-.column-xs-12,
-.column-xs-3,
-.column-xs-8 {
-	float: left;
-	padding: 15px
-}
-
-
-.column-xs-3 {
-	width: 25%
-}
-.column-xs-4 {
-	width: 33.33333333333333%
-}
-
-.column-xs-6 {
-	width: 50%;
-	float: left;
-	padding: 15px
-}
-
-.column-xs-8 {
-	width: 66.66666666666667%
-}
-
-.column-xs-12 {
-	width: 100%
-}
-
-/* HIDE ?????????????????????????????? */
-.hide-xs {
-	display: none
-}
-/* ??????????????????????????????????????? */
-
-/* important but do not know why! */
-.effectTab-header .title::before {
-	width: 125%;
-	left: 15%
-}
-/* seemingly does nothing */
-/* .tab-container {
+	.column-xs-12,
+	.column-xs-3,
+	.column-xs-8 {
+		float: left;
+		padding: 15px
+	}
+	.column-xs-3 {
+		width: 25%
+	}
+	.column-xs-4 {
+		width: 33.33333333333333%
+	}
+	.column-xs-6 {
+		width: 50%;
+		float: left;
+		padding: 15px
+	}
+	.column-xs-8 {
+		width: 66.66666666666667%
+	}
+	.column-xs-12 {
+		width: 100%
+	}
+	/* HIDE ?????????????????????????????? */
+	.hide-xs {
+		display: none
+	}
+	/* ??????????????????????????????????????? */
+	/* important but do not know why! */
+	.effectTab-header .title::before {
+		width: 125%;
+		left: 15%
+	}
+	/* seemingly does nothing */
+	/* .tab-container {
 	padding-top: 25px;
 	padding-bottom: 25px
 } */
 }
 
 @media (min-width:576px) and (max-width:767px) {
-.column-sm-12,
-.column-sm-3,
-.column-sm-4,
-.column-sm-8{
-	float: left;
-	padding: 15px
-}
-
-.column-sm-3 {
-	width: 25%
-}
-.column-sm-4 {
-	width: 33.33333333333333%
-}
-
-.column-sm-8 {
-	width: 66.66666666666667%
-}
-
-.column-sm-12 {
-	width: 100%
-}
-/* NEITHER HIDE OR VISIBLE DOING NOTHING */
-/* HIDE ?????????????????????????????? */
-/* .hide-sm {
+	.column-sm-12,
+	.column-sm-3,
+	.column-sm-4,
+	.column-sm-8 {
+		float: left;
+		padding: 15px
+	}
+	.column-sm-3 {
+		width: 25%
+	}
+	.column-sm-4 {
+		width: 33.33333333333333%
+	}
+	.column-sm-8 {
+		width: 66.66666666666667%
+	}
+	.column-sm-12 {
+		width: 100%
+	}
+	/* NEITHER HIDE OR VISIBLE DOING NOTHING */
+	/* HIDE ?????????????????????????????? */
+	/* .hide-sm {
 	display: none
 } */
-/*???????????????????????????????????? */
-
-/* VISIBLE ?????????????????????????????? */
-/* .visible-sm {
+	/*???????????????????????????????????? */
+	/* VISIBLE ?????????????????????????????? */
+	/* .visible-sm {
 	display: block
 } */
-/*???????????????????????????????????? */
-
-/* DOES NOTHING------- */
-/* .tab-container {
+	/*???????????????????????????????????? */
+	/* DOES NOTHING------- */
+	/* .tab-container {
 	padding-top: 25px;
 	padding-bottom: 25px
 } */
 }
 
 @media (max-width:1000px) {
-.header h1 {
-	padding-left: 70px
-}
-.rotate {
-	left: 30px
-}
-@media (min-width:768px) and (max-width:991px) {
-	.column-md-12,
-	.column-md-3,
-	.column-md-4,
-	.column-md-8 {
-		float: left;
-		padding: 15px
+	.header h1 {
+		padding-left: 70px
 	}
-
-	.column-md-3 {
-		width: 25%
+	.rotate {
+		left: 30px
 	}
-	.column-md-4 {
-		width: 33.33333333333333%
-	}
-
-	.column-md-6 {
-		width: 50%;
-		float: left;
-		padding: 15px
-	}
-	
-	.column-md-8 {
-		width: 66.66666666666667%
-	}
-	
-	.column-md-12 {
-		width: 100%
-	}
-
-	/* NEITHER HIDE OR VISIBLE DOING NOTHING */
-	/* HIDE ?????????????????????????????? */
-	/* .hide-md {
+	@media (min-width:768px) and (max-width:991px) {
+		.column-md-12,
+		.column-md-3,
+		.column-md-4,
+		.column-md-8 {
+			float: left;
+			padding: 15px
+		}
+		.column-md-3 {
+			width: 25%
+		}
+		.column-md-4 {
+			width: 33.33333333333333%
+		}
+		.column-md-6 {
+			width: 50%;
+			float: left;
+			padding: 15px
+		}
+		.column-md-8 {
+			width: 66.66666666666667%
+		}
+		.column-md-12 {
+			width: 100%
+		}
+		/* NEITHER HIDE OR VISIBLE DOING NOTHING */
+		/* HIDE ?????????????????????????????? */
+		/* .hide-md {
 		display: none
 	} */
-	/*???????????????????????????????????? */
-
-	/* VISIBLE ?????????????????????????????? */
-	/* .visible-md {
+		/*???????????????????????????????????? */
+		/* VISIBLE ?????????????????????????????? */
+		/* .visible-md {
 		display: block
 	} */
-	/*???????????????????????????????????? */
+		/*???????????????????????????????????? */
+	}
 }
-}
+
 
 /* background color of the boxes that do not have full fill image */
+
 .effect.effect-twelve {
 	background: #42b078;
-	
 }
+
 
 /* styles the first names */
+
 .effect-twelve .tab-text h2 {
-position: relative;
-padding: .5em 0;
-text-align: left;
-overflow: hidden;
-font-family: noyhabistro-sack,Arial,Helvetica,sans-serif;
-font-size: 2rem;
+	position: relative;
+	padding: .5em 0;
+	text-align: left;
+	overflow: hidden;
+	font-family: noyhabistro-sack, Arial, Helvetica, sans-serif;
+	font-size: 2rem;
 }
+
 
 /* hover line stying */
+
 .effect.effect-twelve h2:after {
-/* this is the line transforming in */
-content: "";
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 3px;
-background-color: rgb(255, 255, 255);
-transform: translate3d(-100%, 0, 0);
-transition: all .35s;
--webkit-transform: translate3d(-100%, 0, 0);
--webkit-transition: all .35s
-}
-/* also line style */
-.effect.effect-twelve:hover h2:after {
-transform: translate3d(0, 0, 0)
+	/* this is the line transforming in */
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: rgb(255, 255, 255);
+	transform: translate3d(-100%, 0, 0);
+	transition: all .35s;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-webkit-transition: all .35s
 }
 
+
+/* also line style */
+
+.effect.effect-twelve:hover h2:after {
+	transform: translate3d(0, 0, 0)
+}
+
+
 /* styles the game type */
+
 .effect-twelve .tab-text p {
-padding: .7em 0;
-font-size: 1.8rem;
-text-align: left;
-line-height: 1.1;
-transform: translate3d(100%, 0, 0);
--webkit-transform: translate3d(100%, 0, 0);
-opacity: 0;
-transition: all .35s;
--webkit-transition: all .35s;
-font-family: 'Courier Prime', monospace;
-text-transform: lowercase;
+	padding: .7em 0;
+	font-size: 1.8rem;
+	text-align: left;
+	line-height: 1.1;
+	transform: translate3d(100%, 0, 0);
+	-webkit-transform: translate3d(100%, 0, 0);
+	opacity: 0;
+	transition: all .35s;
+	-webkit-transition: all .35s;
+	font-family: 'Courier Prime', monospace;
+	text-transform: lowercase;
 }
 
 .effect-twelve .tab-text div {
@@ -427,13 +460,17 @@ text-transform: lowercase;
 
 
 /* brings the game type into view */
+
 .effect-twelve:hover p {
-transform: translate3d(0, 0, 0);
--webkit-transform: translate3d(0, 0, 0);
-opacity: 1
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	opacity: 1
 }
 
+
 /* DOES NOTHING------- */
+
+
 /* .effect.effect-twelve img {
 max-width: none;
 opacity: 1;
@@ -443,177 +480,234 @@ transition: all .35s;
 -webkit-transition: all .35s
 } */
 
+
 /* puts the overlay on the box to show the text better */
+
 .effect.effect-twelve:hover img {
-transform: translate3d(0, 0, 0);
--webkit-transform: translate3d(0, 0, 0);
-opacity: .3
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	opacity: .3
 }
 
+
 /* DOES NOTHING------- */
+
+
 /* .effect.effect-twelveb:hover img {
     background:none;
 } */
 
-
 @media (max-width:575px) {
-.effect.effect-two p.description {
-	bottom: 5.8em
-}
+	.effect.effect-two p.description {
+		bottom: 5.8em
+	}
 }
 
 @media (min-width:576px) and (max-width:767px) {
-.tab .effect .tab-text h2 {
-	font-size: 1.3rem!important;
-	font-family: 'Montserrat', sans-serif;
-}
-.effect.effect-two p.description {
-	bottom: 5.8em
-}
+	.tab .effect .tab-text h2 {
+		font-size: 1.3rem!important;
+		font-family: 'Montserrat', sans-serif;
+	}
+	.effect.effect-two p.description {
+		bottom: 5.8em
+	}
 }
 
 @media (min-width:768px) and (max-width:991px) {
-.effect h2 {
-	font-size: 1.3rem!important
+	.effect h2 {
+		font-size: 1.3rem!important
+	}
 }
-}
+
 
 /* container for the headline */
-.titleWrapper{
-width: 400px;
-margin: auto;
-text-align:center;
-height:80px;
-overflow:hidden;
-text-align:center;
+
+.titleWrapper {
+	width: 400px;
+	margin: auto;
+	text-align: center;
+	height: 80px;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
 }
 
-/* DOES NOTHING------- */
-h1{
-color:#292929;
-font-size: 55px;
-margin:0;
-padding:0;
-line-height:100px;
-height:100px;
-position: relative;
-font-family: noyhabistro-sack,Arial,Helvetica,sans-serif;
-letter-spacing: 0.05em;
-text-transform: uppercase;
+h1 {
+	color: #dc3545;
+	-webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 1.5));
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+	line-height: 100px;
+	height: 100px;
+	position: relative;
+	font-family: noyhabistro-sack, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
 }
+
 
 /* styles the headline/controls the movement */
-h1 span{
-color: white;
-display: inline-block;
-transform: translateY(100%);
-transition: all 0.25s cubic-bezier(0.65, 0, 0.21, 1.47) 0s;
+
+h1 span {
+	display: inline-block;
+	transform: translateY(100%);
+	transition: all 1s cubic-bezier(0.25, 0, 0, 1.47) 0s;
 }
+
 
 /* makes the first instance show on the page */
-.titleWrapper.ready h1 span{
-transform: translateY(0%);
+
+.titleWrapper.ready h1 span {
+	transform: translateY(0%);
 }
+
 
 /* controls each of the headlines */
-h1.first span{
-position:relative;
-z-index:5;
-}
-h1.second span{
-position:relative;
-z-index:1;
+
+h1.first span {
+	position: relative;
+	z-index: 5;
 }
 
+h1.second span {
+	position: relative;
+	z-index: 1;
+}
 
 
 /* takes the first headline away by moving on the - y axis*/
-.titleWrapper.ready:hover h1.first span{
-transform: translateY(-100%);
-}
-/* takes the second headline away by moving on the - y axis*/
-.titleWrapper.ready:hover h1.second span{
-transform: translateY(-100%);
+
+.titleWrapper.ready:hover h1.first span {
+	transform: translateY(-100%);
 }
 
-/* text within the white quote box //maybe add animation to this */ 
+
+/* takes the second headline away by moving on the - y axis*/
+
+.titleWrapper.ready:hover h1.second span {
+	transform: translateY(-100%);
+}
+
+
+/* text within the white quote box //maybe add animation to this */
+
 .tab .effect .tab-textb {
-    padding: 15px;
-    color: #115454;
-    text-transform: none;
-    font-size: 1.25rem;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	}
+	padding: 15px;
+	color: #115454;
+	text-transform: none;
+	font-size: 1.25rem;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
 /* styles the first quotation mark */
+
 .tab-textb h2 {
 	width: 10%;
-    color: rgb(95, 196, 6);
-    margin-top: 0;
-    font-size: 2.75rem;
-    text-align: left;   
-    opacity: 80%;
-	}
+	color: rgb(95, 196, 6);
+	margin-top: 0;
+	font-size: 2.75rem;
+	text-align: left;
+	opacity: 80%;
+}
+
+
 /* styles the second quotation mark */
+
 .tab-textb h4 {
-    width: 100%;
-    color: rgb(95, 196, 6);
-    margin: 0;
-    font-size: 2.75rem;
-    text-align: right;
-    margin-top: 0;
+	width: 100%;
+	color: rgb(95, 196, 6);
+	margin: 0;
+	font-size: 2.75rem;
+	text-align: right;
+	margin-top: 0;
 	opacity: 80%;
 	line-height: 1px;
 }
 
 .tab-textb h3 {
-    font-size: 1rem;
-    margin-top: -42px; 
-    text-align: left;
-    color: #115454;
+	font-size: 1rem;
+	margin-top: -42px;
+	text-align: left;
+	color: #115454;
 	line-height: 25px;
 }
 
-/* this is the simple flipping example */
+#image {
+	padding-top: 50px;
+	padding-bottom: 25px;
+	width: 430px;
+	float: left;
+	-webkit-filter: drop-shadow(12px 12px 12px rgba(255, 255, 255, 1.5));
+	border-radius: 50%;
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
 
-/* my projects "container" */
-/* column-4, 
-column-xs-12, 
-column-sm-6, 
-column-md-6,
-div
- {
-	-webkit-perspective: 1000px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-	perspective: 800px;
-	background-color: none;
+dfn {
+	background: #17a2b8;
+	padding: 0 0.4em;
+	/* cursor: help; */
+	font-style: normal;
+	position: relative;
+}
 
-} */
+dfn::after {
+	content: attr(data-info);
+	display: inline;
+	position: absolute;
+	top: 22px;
+	left: 0;
+	opacity: 0;
+	width: 230px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.75em;
+	padding: 0.5em 0.8em;
+	background: #dc3545;
+	color: #fff;
+	pointer-events: none;
+	/* This prevents the box from apearing when hovered. */
+	transition: opacity 250ms, top 250ms;
+}
 
-/* ny projects "card div" .card .front, etc. */
+dfn::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	border: solid transparent 5px;
+	border-bottom-color: #ffc107;
+	transition: opacity 250ms, top 250ms;
+}
 
-/* #front div {
-	-webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-	transform: rotateY( 180deg );
-} */
+dfn:hover {
+	z-index: 2;
+}
 
-/* my projects back for rotation */
-/* #back {
-	-webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-	backface-visibility: hidden;
-	
-} */
-.animate div {
-	width: 125px;
-	text-transform: none;
+
+/* Keeps the info boxes on top of other elements */
+
+dfn:hover::after,
+dfn:hover::before {
+	opacity: 1;
+}
+
+dfn:hover::after {
+	top: 30px;
+}
+
+dfn:hover::before {
+	top: 20px;
 }

@@ -3,91 +3,85 @@
 		"firstName": "Venatta",
 		"city": "Indianapolis",
 		"game": "Draw Games games",
-		"story": "I love to play lottery. It gives me a peace of mind. I love playing Daily 3 and Scratch-Offs. It gives me joy!"
+		"story": "I love to play lottery. It gives me a peace of mind. I love playing Daily 3 and Scratch-Offs. It gives me joy!",
+		"quip": "...a big fan of Daily 3, she uses her son's birthday numbers every week..."
+	
 	},
 	{
 		"firstName": "Melody",
 		"city": "Cedar Lake",
 		"game": "Scratch-offs",
-		"story": "Nice to hit a prize once in a while and fantabulous when I win!"
+		"story": "Nice to hit a prize once in a while and fantabulous when I win!",
+		"quip": "...plays with her grandmother because it's become tradition..."
 	},
 	{
 		"firstName": "Abid",
 		"city": "Jeffersonville",
 		"game": "Scratch-offs",
-		"story": "I play every day, Daily 3 and Scratch-offs. I love the Indiana lottery!"
+		"story": "I play every day, Daily 3 and Scratch-offs. I love the Indiana lottery!",
+		"quip": "...plays Scratch-offs, but loves to try the draw games every once in a while..."
 	},
 	{
 		"firstName": "Kayley",
 		"city": "Fort Wayne",
 		"game": "Scratch-offs",
-		"story": "My family has always played them and it’s just fun to sit with everyone, scratch and see what we win!"
+		"story": "My family has always played them and it’s just fun to sit with everyone, scratch and see what we win!",
+		"quip": "...really loves enjoying the fun scratching and taking time to play..."
 	},
 	{
 		"firstName": "Jeff",
 		"city": "North Manchester",
 		"game": "Scratch-offs",
-		"story": "I can choose the game that I can afford at the time. I was on the Hoosier Millionaire Show two times and loved it."
+		"story": "I can choose the game that I can afford at the time. I was on the Hoosier Millionaire Show two times and loved it.",
+		"quip": "...won $50,000 on the Hoosier Millionaire tv show back in 1993..."
 	}, 
 	{
 		"firstName": "Peggy",
 		"city": "Decatur",
 		"game": "Draw Games",
-		"story": "It’s fun! I never expect to win, but when I do it’s exciting."
+		"story": "It’s fun! I never expect to win, but when I do it’s exciting.", 
+		"quip": "...won $20,000 on a favorite draw game and used the money to pay off her car..."
 	},
 	{
 		"firstName": "Ronald",
 		"city": "Rochester",
 		"game": "Scratch-offs",
-		"story": "I’m glad that I can be a small part of helping the whole state civil workers."
+		"story": "I’m glad that I can be a small part of helping the whole state civil workers.", 
+		"quip": "...volunteers in his spare time, and loves what the lottery gives back..."
 	}, 
 	{
 		"firstName": "Jaime",
 		"city": "Terre Haute",
 		"game": "Scratch-offs",
-		"story": "I enjoy the game tickets such as bingo and the crosswords. It’s entertaining with a chance to win money!"
+		"story": "I enjoy the game tickets such as bingo and the crosswords. It’s entertaining with a chance to win money!", 
+		"quip": "...loves the fun of extended play..."
 	},
 	{
 		"firstName": "Brenda",
 		"city": "Kingman",
 		"game": "Scratch-offs",
-		"story": "I have played the lottery for years. It is fun and relaxing after a hard day’s work."
+		"story": "I have played the lottery for years. It is fun and relaxing after a hard day’s work.", 
+		"quip": "...says playing is the best part of the day..."
 	},
 	{
 		"firstName": "Teresa",
 		"city": "Fishers",
 		"game": "Draw Games",
-		"story": "It’s exciting, for a chance to win big cash for something fun like a vacation!"
+		"story": "It’s exciting, for a chance to win big cash for something fun like a vacation!",
+		"quip": "...any crossword or bingo game that comes out, she goes out and gets one right away..."
 	},
 	{
 		"firstName": "Daniel",
 		"city": "Hope",
 		"game": "Draw Games",
-		"story": "I enjoy putting my money back into the lottery funds to help fellow Hoosiers!"
+		"story": "I enjoy putting my money back into the lottery funds to help fellow Hoosiers!",
+		"quip": "...a longtime Indiana resident, he is all about his community..."
 	},  
 	{
 		"firstName": "Shannon",
 		"city": "Burnettsville",
 		"game": "Draw Games",
-		"story": "I love to play the lottery for the excitement and anticipation it brings to my day!"
-	},  
-	{
-		"firstName": "Diane",
-		"city": "Indianapolis",
-		"game": "Scratch-offs",
-		"story": "I love playing the Scratch-offs, and I can give them to family and friends for birthdays and holidays."
-	},
-	{
-		"firstName": "Michael",
-		"city": "Valparaiso",
-		"game": "Draw Games",
-		"story": "I have been playing ever since Indiana started their lottery, and I find it exciting to play responsibly while trying to win a life changing amount."
-	},    
-	{
-		"firstName": "Adrienne",
-		"city": "Bourbon",
-		"game": "Scratch-offs",
-		"story": "It’s exciting to play! I love the huge variety of different games! Always something new and fun to play!"
+		"story": "I love to play the lottery for the excitement and anticipation it brings to my day!",
+		"quip": "...busy mother of two plays for a special 'me-moments'... "
 	}
-
 ]
