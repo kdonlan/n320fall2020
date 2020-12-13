@@ -1,25 +1,58 @@
 //check that my script is linked
 console.log("file is working");
+
 $(document).ready(function() {
     console.log("on document ready");
     //takes .4 seconds to transition "from" to position x of 800 //delay of the first animation for .2 seconds, then the HL logo in half second
-    TweenLite.from("#image", .4, {
+    // TweenLite.from("#image", 1.25, {
+    //     duration: .5,
+    //     x: 1200,
+    //     alpha: 0,
+    //     delay: .2
+    // });
+    //animates logo
+    TweenLite.from("#logo", 1, {
         duration: .5,
-        x: 800,
+        x: -800,
+        alpha: 0
+    });
+    //animates headline
+    TweenLite.from("#imageHeadline", .75, {
+        duration: .5,
+        y: -800,
         alpha: 0,
         delay: .2
     });
-    TweenLite.from("#logo", .4, {
+    //animates sub-headline copy
+    TweenLite.from("#copy", 1, {
         duration: .5,
-        x: 800,
+        y: 800,
         alpha: 0,
-        delay: .5
-    });
+        delay: .66
+    })
+
+
+
+    ////// menu script ////////// on-click menu icon
+    var items = document.querySelectorAll('.circle a');
+    console.log("this is here");
+    //gets reference to each anchor tag icon
+    for (var i = 0, l = items.length; i < l; i++) {
+
+    }
+    //all of the anchor tags from above are shown when the button with .menu-button is clicked, i.e. "target"
+    //the way it is shown is by the css styles defined in main.css
+    document.querySelector('.menu-button').onclick = function(e) {
+        e.preventDefault();
+        document.querySelector(".circle").classList.toggle('open');
+    }
+
 })
 
 
 
 ///////////////////////////////////////////////////////////////////////// LOADING DATA SET ///////////////////////////////////////////////////
+
 //json file brought in using fetch in order to access the data in json file
 fetch("data/data.json") //path to the data.json file
     .then(function(resp) {
